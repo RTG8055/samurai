@@ -10,7 +10,7 @@ download_daily_data<-function(start_date,end_date, run_num, data_dir = "data/"){
   print("downloading data")
   for(i in seq_along(dates)){
     if(sum(str_detect(files,paste("samurai_",dates[i],"_*[0-9]*_",".csv", sep=""))) ==0){
-      write.csv(fxddr(dates[i],"samurai_"), paste(paste(data_dir,"palace",sep=""),dates[i],run_num,".csv", sep="_"), row.names = FALSE)
+      write.csv(fxddr(dates[i],"FX"), paste(paste(data_dir,"palace",sep=""),dates[i],run_num,".csv", sep="_"), row.names = FALSE)
     }
   }
 }
