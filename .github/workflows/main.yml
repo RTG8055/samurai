@@ -3,7 +3,7 @@ name: swordManufacture
 # Controls when the action will run.
 on:
   schedule:
-  - cron:  '* 12 * * *'
+  - cron:  '15 12 * * *'
 
 
 jobs:
